@@ -1,0 +1,34 @@
+Import OpenCV Library 2.4.2 to workspace.
+Right click "OpticalFlow" project go to properties
+
+    Android->Add
+        Add OpenCV Library 2.4.2 to project
+        
+    Java Build Path->Projects->Add
+        Add OpenCV Library 2.4.2 to project's build path
+        
+    C/C++ Build
+        set Build command to ${NDKROOT}/ndk-build
+        ****if you are using Windows use ${NDKROOT}/ndk-build.cmd  *****
+        
+    C/C++ Build->Build Variables
+        Add
+            Variable: NDKROOT
+            Value: Your Android NDK directory
+
+    C/C++ General->Code Analysis
+        Select "Use Project Settings"
+            At the bottom Uncheck "Syntax and Semantic Errors"
+            ****Eclipse does not handle JNI code without thinking you have syntax errors so just turn it off***
+        
+
+In Project Explorer
+Open Optical Flow->jni->Android.mk
+    Change the indicated line
+    
+
+    
+
+        
+
+
